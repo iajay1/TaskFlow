@@ -5,8 +5,8 @@ const path    = require('path');
 
 const app = express();
 
-// Allow requests from the frontend URL
-app.use(cors({ origin: process.env.FRONTEND_URL || '*', credentials: true }));
+// Allow requests from any frontend origin
+app.use(cors({ origin: true, credentials: true }));
 
 // Parse JSON request bodies
 app.use(express.json());
