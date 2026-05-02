@@ -1,0 +1,267 @@
+
+==============================================================================
+         TaskFlow - VIDEO DEMO SCRIPT (2-5 Minutes)
+==============================================================================
+
+  Instructions:
+  - Open the deployed app: https://TaskFlow-e3ex.onrender.com
+  - Use screen recording software (OBS / Windows Game Bar / Loom)
+  - Follow each scene below — read the dialogue while performing
+    the on-screen actions described in [brackets]
+
+==============================================================================
+  SCENE 1: INTRODUCTION (0:00 - 0:20)
+==============================================================================
+
+  [Show the login page on screen]
+
+  "Hi, I'm Ajay, and this is TaskFlow — a full-stack team task
+   management web application.
+
+   It's built with React and TypeScript on the frontend, Node.js and
+   Express on the backend, and PostgreSQL as the database. The entire
+   app uses JWT-based authentication and is deployed live on Render.
+
+   Let me walk you through how it works."
+
+
+==============================================================================
+  SCENE 2: SIGNUP & LOGIN (0:20 - 0:50)
+==============================================================================
+
+  [Click "Sign up" link on login page]
+
+  "First, let's look at authentication. A new user can sign up with
+   their name, email, and password."
+
+  [Fill in signup form and submit — or show it briefly, then go back
+   to login page]
+
+  "Passwords are hashed using bcrypt before storing in the database,
+   so we never save plain text passwords."
+
+  [Type email and password on the login page and click Sign In]
+
+  "When a user logs in, the backend verifies the credentials, generates
+   a JWT token, and sends it back. The frontend stores this token in
+   localStorage and attaches it to every API request automatically
+   using an Axios interceptor."
+
+  [Dashboard loads after login]
+
+  "And we're in. Let me show you the Dashboard."
+
+
+==============================================================================
+  SCENE 3: DASHBOARD (0:50 - 1:30)
+==============================================================================
+
+  [Pan across the dashboard — show KPI cards, chart, task list]
+
+  "This is the Dashboard — it gives a real-time overview of all your
+   tasks across every project.
+
+   At the top, we have three KPI cards showing Total Tasks, Completed
+   Tasks with the completion percentage, and Overdue Tasks.
+
+   On the left, there's a donut chart that visually breaks down tasks
+   by status — To Do, In Progress, and Done.
+
+   On the right, we have the 'My Tasks' section — these are tasks
+   personally assigned to me, sorted by urgency. You can see the
+   priority badges and due dates right here."
+
+  [Scroll down to Team Workload section if visible]
+
+  "And below that, we have the Team Workload section — it shows
+   each team member's task distribution with progress bars, so you
+   can see who has the most work and who's on track."
+
+
+==============================================================================
+  SCENE 4: PROJECTS PAGE (1:30 - 2:00)
+==============================================================================
+
+  [Click "Projects" in the sidebar]
+
+  "Now let's go to the Projects page. Here I can see all the projects
+   I'm a part of — each card shows the project name, my role, number
+   of members, and task count.
+
+   I can filter between All, Owned, and Member projects using these
+   toggle tabs."
+
+  [Click the "+ Create" button]
+
+  "As an admin, I can create a new project. Let me create one quickly."
+
+  [Type a project name like "Mobile App Redesign", add a description,
+   click Create]
+
+  "The project is created and I'm automatically assigned as the Admin.
+   This is important because the app has role-based access control —
+   Admins have full permissions while Members can only view and update
+   their own tasks."
+
+
+==============================================================================
+  SCENE 5: KANBAN BOARD (2:00 - 3:00)
+==============================================================================
+
+  [Click on a project to open it]
+
+  "This is the Kanban Board — the core of the app. Tasks are organized
+   in three columns: To Do, In Progress, and Done."
+
+  [Click "+ Task" button and create a new task]
+
+  "I can create a new task with a title, description, priority level,
+   assign it to a team member, and set a due date."
+
+  [After creating, show the task card in the To Do column]
+
+  "Each task card shows the title, assignee avatar, priority badge,
+   due date, and counts for comments and subtasks."
+
+  [Drag a task from "To Do" to "In Progress"]
+
+  "The best part — I can drag and drop tasks between columns to update
+   their status. This uses HTML5 drag-and-drop, and the status change
+   is saved to the database instantly."
+
+  [Click on a task card to open the modal]
+
+  "Clicking a task opens the detail modal. It has three tabs —
+   Details, Comments, and Subtasks."
+
+  [Show Comments tab]
+
+  "In the Comments tab, team members can discuss the task — it shows
+   who commented and when."
+
+  [Show Subtasks tab]
+
+  "And in the Subtasks tab, I can break a task into smaller checklist
+   items and toggle them as complete."
+
+  [Close the modal]
+
+
+==============================================================================
+  SCENE 6: INVITE MEMBERS (3:00 - 3:20)
+==============================================================================
+
+  [Click the "Invite" button on the Kanban board header]
+
+  "Admins can invite members by entering their email address. The
+   system checks if that email is registered on TaskFlow — if yes,
+   they're added to the project. If not, it shows an error asking
+   them to sign up first.
+
+   I can also assign them as either a Member or an Admin."
+
+  [Close the invite modal]
+
+
+==============================================================================
+  SCENE 7: EXTRA FEATURES (3:20 - 4:00)
+==============================================================================
+
+  [Click the history/activity icon on the Kanban board]
+
+  "There's also an Activity Log that tracks every action — task
+   created, status changed, members invited — all with timestamps."
+
+  [Close activity log, click the download/export icon]
+
+  "I can export all tasks as a CSV file with one click — useful for
+   reporting and sharing with stakeholders."
+
+  [Navigate to Calendar in the sidebar]
+
+  "This is the Calendar View — it shows all task due dates on a
+   monthly grid. I can navigate between months, and today's date
+   is highlighted. Tasks are color-coded by priority."
+
+  [Click the Dark Mode toggle in the sidebar]
+
+  "And of course, the app supports Dark Mode — the entire design
+   system adjusts with proper clay shadows for the dark theme."
+
+  [Toggle back to light mode]
+
+
+==============================================================================
+  SCENE 8: DESIGN & TECH WRAP-UP (4:00 - 4:30)
+==============================================================================
+
+  [Show the login page one more time, or stay on any page]
+
+  "A quick note on the design — I built a custom Neobrutalist UI
+   design system from scratch. It uses soft inner and outer shadows
+   to give elements a clay-like, tactile feel. The color palette is
+   warm cream with sage green accents, and the typography uses the
+   Space Grotesk font family."
+
+
+==============================================================================
+  SCENE 9: CLOSING (4:30 - 5:00)
+==============================================================================
+
+  [Show the GitHub repo page or the deployed URL]
+
+  "To summarize, TaskFlow is a full-stack web app with:
+   - React and TypeScript frontend
+   - Node.js and Express backend
+   - PostgreSQL database hosted on Neon
+   - JWT authentication with bcrypt
+   - Role-based access control
+   - And 12 extra features including comments, subtasks, calendar,
+     activity log, CSV export, dark mode, and drag-and-drop.
+
+   The app is deployed live on Render and the source code is available
+   on GitHub. Thank you for watching!"
+
+  [End recording]
+
+
+==============================================================================
+  QUICK CHECKLIST - FEATURES TO SHOW ON SCREEN
+==============================================================================
+
+  [ ] Login page (Neobrutalist design)
+  [ ] Signup page (briefly)
+  [ ] Login with credentials
+  [ ] Dashboard (KPI cards, chart, task list, team workload)
+  [ ] Projects page (cards, filter tabs)
+  [ ] Create a project
+  [ ] Kanban board (3 columns)
+  [ ] Create a task (with priority, assignee, due date)
+  [ ] Drag and drop a task between columns
+  [ ] Open task detail modal (3 tabs)
+  [ ] Show comments tab
+  [ ] Show subtasks tab
+  [ ] Invite a member
+  [ ] Activity log
+  [ ] CSV export
+  [ ] Calendar view
+  [ ] Dark mode toggle
+  [ ] GitHub repo / deployed URL
+
+
+==============================================================================
+  TIPS FOR RECORDING
+==============================================================================
+
+  - Use Windows Game Bar: Press Win+G to start recording
+  - Or use OBS Studio (free) for better quality
+  - Or use Loom (browser extension) for quick recordings
+  - Keep your browser at full screen
+  - Speak clearly and at a moderate pace
+  - If you make a mistake, just pause and continue — you can
+    trim it later
+  - Aim for 3-4 minutes — don't rush, but don't over-explain
+
+==============================================================================
+
+
